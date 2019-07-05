@@ -12,7 +12,7 @@ html{font-size: 16px;}
 
 body{
     color: $prestige-blue;
-    background: $anti-flash-white;
+    background: $white;
     text-align: left;
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
@@ -31,7 +31,10 @@ h1,h2,h3,h4,h5,h6{
 
 section{padding: 25px 0 ;}
 
-/* Inputs */
+/* Form Group */
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
 input[type='email']:focus,
 input[type='password']:focus,
 input[type='text']:focus,

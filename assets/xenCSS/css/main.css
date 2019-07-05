@@ -2,9 +2,18 @@
  * XenCSS (Xenna CSS)
  * Copyright 2019 Athalla Rizky
  * All Right Reserved
- *
+ *  
  * Progress : (5/100) %
  */
+/* Additional Fonts */
+@font-face {
+  font-family: "XBold";
+  src: url(../../fonts/berlin.x-bold.ttf);
+}
+@font-face {
+  font-family: "Titillium";
+  src: url(../../fonts/titillium-web.semibold.ttf);
+}
 *,
 *::before,
 *::after {
@@ -19,7 +28,7 @@ html {
 
 body {
   color: #2f3542;
-  background: #f1f2f6;
+  background: #FFF;
   text-align: left;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -42,7 +51,10 @@ section {
   padding: 25px 0;
 }
 
-/* Inputs */
+/* Form Group */
+input[type=submit]:focus,
+input[type=reset]:focus,
+input[type=button]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
 input[type=text]:focus,
@@ -91,10 +103,137 @@ h6 {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+/* Float Right */
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+/* Padding */
+.padding-0 {
+  padding: 0 !important;
+}
+
+/* Margin */
+/* margin 0.25rem */
+.margin-1 {
+  margin: 0.25rem;
+}
+
+.margin-tb-1 {
+  margin: 0.25rem 0;
+}
+
+/* margin 0.5rem */
+.margin-2 {
+  margin: 0.5rem;
+}
+
+.margin-tb-2 {
+  margin: 0.5rem 0;
+}
+
+/* margin 0.75rem */
+.margin-3 {
+  margin: 0.75rem;
+}
+
+.margin-tb-3 {
+  margin: 0.75rem 0;
+}
+
+/* margin 1rem */
+.margin-4 {
+  margin: 1rem;
+}
+
+.margin-tb-4 {
+  margin: 1rem 0;
+}
+
+/* margin 1.25rem */
+.margin-5 {
+  margin: 1.25rem;
+}
+
+.margin-tb-5 {
+  margin: 1.25rem 0;
+}
+
+/* margin 1.5rem */
+.margin-6 {
+  margin: 1.5rem;
+}
+
+.margin-tb-6 {
+  margin: 1.5rem 0;
+}
+
+/* margin 1.75rem */
+.margin-7 {
+  margin: 1.75rem;
+}
+
+.margin-tb-7 {
+  margin: 1.75rem 0;
+}
+
+/* margin 2rem */
+.margin-8 {
+  margin: 2rem;
+}
+
+.margin-tb-8 {
+  margin: 2rem 0;
+}
+
+/* margin 2.25rem */
+.margin-9 {
+  margin: 2.25rem;
+}
+
+.margin-tb-9 {
+  margin: 2.25rem 0;
+}
+
+/* margin 2.5rem */
+.margin-10 {
+  margin: 2.5rem;
+}
+
+.margin-tb-10 {
+  margin: 2.5rem 0;
+}
+
+/* margin 2.75rem */
+.margin-11 {
+  margin: 2.75rem;
+}
+
+.margin-tb-11 {
+  margin: 2.75rem 0;
+}
+
+/* margin 3rem */
+.margin-12 {
+  margin: 3rem;
+}
+
+.margin-tb-12 {
+  margin: 3rem 0;
+}
+
 /* GRID SYSTEM */
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 .row {
@@ -192,6 +331,109 @@ h6 {
 }
 @media only screen and (min-width: 60em) {
   /* 960px */
+}
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  padding: calc(1.5 * 0.5rem) 0;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+  min-height: 4rem;
+}
+
+.navbar-brand {
+  display: inline-block;
+  margin: 2.5px 0 0 0;
+}
+
+.navbar-brand-center {
+  display: inline-block;
+  margin: 2.5px 0 0 0;
+  position: absolute;
+  left: 45%;
+  right: 50%;
+}
+
+.text-logo {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px 20px 5px 20px;
+  font-family: "XBold";
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #2f3542;
+}
+
+.navbar-navigation {
+  position: relative;
+}
+
+.navbar-menu {
+  display: inline-block;
+  position: absolute;
+  padding: 10px;
+}
+.navbar-menu .navbar-item {
+  margin-right: 5px;
+  display: inline;
+  list-style: none;
+}
+.navbar-menu .navbar-item a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #2f3542;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar-menu .navbar-item a:active {
+  color: #000;
+}
+.navbar-menu .navbar-item .active {
+  background: rgba(47, 53, 66, 0.1);
+  color: #1e90ff;
+  font-weight: 700;
+}
+
+.navbar-right {
+  right: 0;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 0.05rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+}
+
+.btn-normal {
+  padding: 0.8rem 1.5rem;
+}
+
+.btn-primary {
+  background: #1e90ff;
+}
+
+.btn-success {
+  background: #2ed573;
+}
+
+.btn-danger {
+  background: #ff6348;
+}
+
+.btn-warning {
+  background: #eccc68;
+  color: #2f3542 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

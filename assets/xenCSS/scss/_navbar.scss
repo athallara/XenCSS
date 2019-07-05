@@ -1,0 +1,68 @@
+/* Navigation Bar */
+@mixin defaultNavbar {
+    display: inline-block;
+    margin: 2.5px 0 0 0;
+}
+.navbar{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: calc(1.5 * #{$main-padding}) 0;
+    border-bottom: 1.5px solid rgba($black, .1);
+    min-height: 4rem;
+}
+
+.navbar-brand{
+    @include defaultNavbar;
+}
+.navbar-brand-center{
+    @include defaultNavbar;
+    position: absolute;
+    left: 45%;
+    right: 50%;
+}
+.text-logo{
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 20px 5px 20px;
+    font-family: 'XBold';
+    font-size: 1.5rem;
+    display: inline-block;
+    color: $prestige-blue;
+}
+.navbar-navigation{
+    position: relative;
+}
+.navbar-menu{
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    .navbar-item{
+        margin-right: 5px;
+        display: inline;
+        list-style: none;
+        a{
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: $prestige-blue;  
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+        }
+
+        a:active{color:$black}
+
+        .active{
+            background: rgba($prestige-blue, .1);
+            color: $clear-chill;
+            font-weight: 700;
+        }
+    }
+}
+
+.navbar-right{
+    right: 0;
+}

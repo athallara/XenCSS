@@ -1,0 +1,23 @@
+/* Button */
+
+.btn{
+    cursor: pointer;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: .05rem;
+}
+
+//Button Size
+.btn-small{padding: $btn-small;}
+.btn-normal{padding: $btn-normal;}
+
+
+//Button Color
+.btn-primary{background: $clear-chill;}
+.btn-success{background: $ufo-green;}
+.btn-danger{background: $bruschetta-tomato;}
+.btn-warning{
+    background: $golden-sand; 
+    color: $prestige-blue !important;
+}
