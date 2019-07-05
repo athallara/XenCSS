@@ -1,0 +1,50 @@
+// CSS RESETS //
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html{font-size: 16px;}
+
+body{
+    color: $prestige-blue;
+    background: $anti-flash-white;
+    text-align: left;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+a, b, i, u, p, span, strong {
+    font-size: 1.2rem;
+    margin-bottom: $main-margin;
+}
+
+b, strong, .heading-strong{font-weight: 600;}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: calc(1 * #{$main-margin});
+    font-weight: 500;
+}
+
+section{padding: 25px 0 ;}
+
+/* Inputs */
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='text']:focus,
+textarea:focus,
+select:focus {
+  border:1px solid $bruschetta-tomato;
+  outline: 0;
+}
+
+/* Heading */
+h1{font-size: calc( 5rem * #{$heading-ratio}) };
+h2{font-size: calc( 4.5rem * #{$heading-ratio}) };
+h3{font-size: calc( 4rem * #{$heading-ratio}) };
+h4{font-size: calc( 3.5rem * #{$heading-ratio}) };
+h5{font-size: calc( 3rem * #{$heading-ratio}) };
+h6{font-size: calc( 2.5rem * #{$heading-ratio}) };
